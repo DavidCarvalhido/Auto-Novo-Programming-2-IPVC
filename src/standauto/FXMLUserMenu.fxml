@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="standauto.FXMLUserMenuController">
+   <top>
+      <HBox prefHeight="78.0" prefWidth="1100.0" style="-fx-background-color: #646ecb;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="263.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="270.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/menu_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="*titulo automatico*">
+               <HBox.margin>
+                  <Insets left="50.0" top="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #646ecb; -fx-border-color: #646ecb;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="BASELINE_LEFT" prefHeight="60.0" prefWidth="277.0" style="-fx-background-color: #646ecb; -fx-background-radius: 0;" text="Reservar Automóvel" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" prefHeight="60.0" prefWidth="270.0" style="-fx-background-color: #646ecb; -fx-background-radius: 0;" text="Automóveis Disponíveis" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" prefHeight="60.0" prefWidth="270.0" style="-fx-background-color: #646ecb; -fx-background-radius: 0;" text="Conta de Cliente" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
